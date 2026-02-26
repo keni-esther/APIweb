@@ -7,7 +7,7 @@ const affichage = document.getElementById('resultat');
 
 // je clique sur le bouton
 bouton.addEventListener("click",()=> {
-    affichage.innertext = "chargement en cours...";
+    affichage.innerText = "chargement en cours...";
 
     // je vais utiliser la methode fetch 
     // qui sert a effectué une requête
@@ -21,4 +21,5 @@ bouton.addEventListener("click",()=> {
         affichage.innerText = "Erreur de connexion à l'API.";
         console.error(erreur);
     });
+
 });
